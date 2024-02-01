@@ -1,0 +1,114 @@
+/* ------------------------------ Font-Family CSS ---------------------------*/
+
+@font-face {
+  font-family: 'Integral-Bold';
+  src: url('../fontfamily/OTF/IntegralCF-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Integral-ExtraBold';
+  src: url('../fontfamily/OTF/IntegralCF-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Integral-Medium';
+  src: url('../fontfamily/OTF/IntegralCF-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Integral-Regular';
+  src: url('../fontfamily/OTF/IntegralCF-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Integral-Semibold';
+  src: url('../fontfamily/OTF/IntegralCF-DemiBold.otf');
+}
+
+@font-face {
+  font-family: 'Integral-Heavy';
+  src: url('../fontfamily/OTF/IntegralCF-Heavy.otf');
+}
+
+/* Apply Font Classes */
+.bold-font {
+  font-family: 'Integral-Bold';
+}
+
+.extra-bold-font {
+  font-family: 'Integral-ExtraBold';
+}
+
+.medium-font {
+  font-family: 'Integral-Medium';
+}
+
+.regular-font {
+  font-family: 'Integral-Regular';
+}
+
+.semibold-font {
+  font-family: 'Integral-Semibold';
+}
+
+.heavy-font {
+  font-family: 'Integral-Heavy';
+}
+
+.menu-list ul li:hover:after {
+  content: ''; /* Adding content for the pseudo-element */
+  border-bottom: 2px solid #ff8049;
+  width: 100%;
+  position: absolute;
+  bottom: -24px; /* Ensuring the border is at the bottom */
+  left: 0; /* Aligning the border to the left edge of the list item */
+}
+
+.bg-txt {
+  position: relative;
+  z-index: 1;
+  color: #242c3c;
+}
+.bg-txt:after {
+  content: '';
+  position: absolute;
+  width: 109%;
+  height: 100%;
+  background-color: #ff8049;
+  left: -14px;
+  right: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+.bg-txt2 {
+  position: relative;
+  z-index: 999;
+  color: #fff;
+}
+.bg-txt2:after {
+  content: '';
+  position: absolute;
+  width: 109%;
+  height: 100%;
+  background-color: #ff8049;
+  left: -18px;
+  right: 0;
+  z-index: -1;
+}
+.mantine-39v7dz {
+  background-color: white !important;
+}
+.active {
+  color: #ff8049;
+}
+.active:after {
+  content: '';
+  position: absolute;
+  width: 109%;
+  height: 100%;
+  background-color: #ff8049;
+  left: -14px;
+  right: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
