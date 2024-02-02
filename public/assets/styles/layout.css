@@ -64,6 +64,18 @@
   left: 0; /* Aligning the border to the left edge of the list item */
 }
 
+.effect {
+  color: #ff8049;
+}
+.effect:after {
+  content: ''; /* Adding content for the pseudo-element */
+  border-bottom: 2px solid #ff8049;
+  width: 100%;
+  position: absolute;
+  bottom: -24px; /* Ensuring the border is at the bottom */
+  left: 0; /* Aligning the border to the left edge of the list item */
+}
+
 .bg-txt {
   position: relative;
   z-index: 1;
@@ -108,6 +120,35 @@
   height: 100%;
   background-color: #ff8049;
   left: -14px;
+  right: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
+.mantine-1bd9jsi,
+.mantine-19pz3dh {
+  background-color: #242c3c !important;
+}
+.mantine-gyd9f1 {
+  color: white !important;
+}
+
+.scr::-webkit-scrollbar {
+  width: 12px; /* You can adjust the width as needed */
+}
+
+.bg-txt3 {
+  position: relative;
+  z-index: 1;
+  color: #fbf4ea;
+}
+.bg-txt3:after {
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 100%;
+  background-color: #ff8049;
+  left: -5px;
   right: 0;
   z-index: -1;
   transform: rotate(-2deg);

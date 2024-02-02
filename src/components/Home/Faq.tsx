@@ -3,30 +3,6 @@
 import { FaqAccordion } from '@/ui/FaqAccordion';
 import React from 'react';
 
-const data = [
-  {
-    id: 1,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
-    author: 'ERIK VAN VEEN',
-    desc: 'Geschreven op',
-    source: 'Trustpilot',
-  },
-  {
-    id: 2,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
-    author: 'ERIK VAN VEEN',
-    desc: 'Geschreven op',
-    source: 'Trustpilot',
-  },
-  {
-    id: 3,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
-    author: 'ERIK VAN VEEN',
-    desc: 'Geschreven op',
-    source: 'Trustpilot',
-  },
-];
-
 export const Faq = () => {
   return (
     <div className="  md:my-[60px] ">
