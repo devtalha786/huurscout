@@ -4,39 +4,17 @@ import HeaderDrawer from '@/ui/HeaderDrawer';
 import { Container } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
-
-const menuList = [
-  {
-    id: 1,
-    name: 'maar hoe?',
-  },
-  {
-    id: 2,
-    name: 'REVIEWS?',
-  },
-  {
-    id: 3,
-    name: 'over ons',
-  },
-  {
-    id: 4,
-    name: 'vragen?',
-  },
-  {
-    id: 5,
-    name: 'contact',
-  },
-];
 
 export const Header = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const pathname = usePathname();
 
   const navigation = [
-    { name: 'maar hoe?', href: '/', current: false },
-    { name: 'REVIEWS?', href: '#', current: false },
+    { name: 'maar hoe?', href: '/', current: pathname === '/' },
+    { name: 'REVIEWS?', href: '/reviews', current: pathname === '/reviews' },
     { name: 'over ons', href: '#', current: false },
     { name: 'vragen?', href: '#', current: false },
     { name: 'contact', href: '#', current: false },
@@ -55,9 +33,11 @@ export const Header = () => {
                 {navigation.map((item, index) => (
                   <li
                     key={index}
-                    className={`semibold-font   text-[#FBF4EA] text-[14px] font-semibold leading-[15.4px] cursor-pointer hover:text-[#FF8049] relative transition-all duration-100`}
+                    className={`semibold-font ${
+                      item.current ? 'effect' : ''
+                    }  text-[#FBF4EA] text-[14px] font-semibold leading-[15.4px] cursor-pointer hover:text-[#FF8049] relative transition-all duration-100`}
                   >
-                    {item.name}
+                    <Link href={item.href}>{item.name}</Link>
                   </li>
                 ))}
               </ul>

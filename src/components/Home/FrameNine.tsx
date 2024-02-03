@@ -33,7 +33,7 @@ export const FrameNine = () => {
               <div className="img1 relative z-50">
                 <Image src="/assets/images/Group 8231.svg" height={175} width={156} alt="" />
               </div>
-              <div className="img2 absolute top-[68px] left-[93px] z-20">
+              <div className="img2 absolute top-[68px] left-[93px] ">
                 <Image src="/assets/images/Group 8230.svg" height={175} width={156} alt="" />
               </div>
               <div className="img3 absolute top-[131px] left-[177px]">
