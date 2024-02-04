@@ -2,6 +2,7 @@
 import { containerMaxWidth2 } from '@/theme/theme';
 import { Button, Container } from '@mantine/core';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 const data = [
   {
@@ -47,9 +48,12 @@ const data = [
 ];
 
 export const FrameEight = () => {
+  const pathName = usePathname();
   return (
     <div
-      className=" min-h-[1836px] mt-[-17px] md:mt-0 bg-[#FFFFFF]  md:flex md:items-center  md:min-h-[661px]  "
+      className={` min-h-[1836px] mt-[-17px] md:mt-0 ${
+        pathName == '/overons' ? 'bg-[#FBF4EA]' : 'bg-white'
+      }   md:flex md:items-center  md:min-h-[661px]  `}
       style={{
         borderRadius: '10px 10px 0px 0px',
       }}

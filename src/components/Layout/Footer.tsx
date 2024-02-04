@@ -2,6 +2,7 @@
 import { containerMaxWidth2 } from '@/theme/theme';
 import { Button, Container } from '@mantine/core';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 const menuList = [
   {
@@ -139,9 +140,11 @@ export const Footer = () => {
               className="cursor-pointer object-cover"
             />
             <div className="flex pt-[20px] gap-[20px]">
-              <p className="poppins  font-normal underline    text-[12px]  text-[#B8B6E7] leading-[21.6px] ">
-                Privacy policy
-              </p>
+              <Link href="/privacy-policy">
+                <p className="poppins  font-normal underline    text-[12px]  text-[#B8B6E7] leading-[21.6px] ">
+                  Privacy policy
+                </p>
+              </Link>
               <p className="poppins  font-normal underline    text-[12px]  text-[#B8B6E7] leading-[21.6px] ">
                 Terms & conditions
               </p>

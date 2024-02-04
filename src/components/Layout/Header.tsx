@@ -15,9 +15,9 @@ export const Header = () => {
   const navigation = [
     { name: 'maar hoe?', href: '/', current: pathname === '/' },
     { name: 'REVIEWS?', href: '/reviews', current: pathname === '/reviews' },
-    { name: 'over ons', href: '#', current: false },
-    { name: 'vragen?', href: '#', current: false },
-    { name: 'contact', href: '#', current: false },
+    { name: 'over ons', href: '/overons', current: pathname === '/overons' },
+    { name: 'vragen?', href: '/verify', current: pathname === '/verify' || pathname === '/verify-success' },
+    { name: 'contact', href: '/contact-us', current: pathname === '/contact-us' },
   ];
   return (
     <>
