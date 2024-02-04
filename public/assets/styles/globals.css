@@ -139,10 +139,38 @@ a {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Classes for different font weights */
+.poppins-regular {
+  font-weight: 400;
+}
+
+.poppins-medium {
+  font-weight: 500; /* Adjust the font weight value as needed */
+}
+
+.poppins-semibold {
+  font-weight: 600; /* Adjust the font weight value as needed */
+}
+
+.poppins-bold {
+  font-weight: 700;
+}
+
 .heebo {
   font-family: 'Heebo', sans-serif;
 }
 
 .mantine-39v7dz {
   background-color: white !important;
+}
+.mantine-gm39d {
+  font-weight: 500 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+.mantine-8xgjlv[data-active] {
+  background-color: #fbf4ea !important;
+}
+
+.mantine-1ryt1ht {
+  font-weight: 500 !important;
 }

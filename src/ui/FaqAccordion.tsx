@@ -46,11 +46,11 @@ const groceries = [
 export const FaqAccordion = () => {
   // See groceries data above
   const items = groceries.map((item) => (
-    <Accordion.Item key={item.value} value={item.value}>
-      <Accordion.Control className="poppins text-[14px] leading-[19.6px] font-medium text-[#0F172A]">
+    <Accordion.Item key={item.value} value={item.value} sx={{ background: '#FBF4EA' }}>
+      <Accordion.Control className="poppins-medium text-[14px] leading-[19.6px]  text-[#0F172A]">
         {item.value}
       </Accordion.Control>
-      <Accordion.Panel className="poppins text-[14px] leading-[19.6px] font-medium text-[#0F172A]">
+      <Accordion.Panel className="poppins-medium text-[14px] leading-[19.6px]  text-[#0F172A]">
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>

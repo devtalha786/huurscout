@@ -12,7 +12,7 @@ export const TrusPilot = () => {
           <div className="md:w-7/12 w-full p-4">
             <div className="img hidden md:block">
               <Image
-                src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.svg"
+                src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.png"
                 width={254}
                 height={50}
                 alt="pilot"
@@ -20,16 +20,17 @@ export const TrusPilot = () => {
               />
             </div>
             <div className="md:max-w-[553px] max-w-[326px] mx-auto md:mx-0 w-full pt-[30px] pb-[60px] md:pb-0 ">
-              <p className="poppins font-medium text-[18px] text-[#1A1A1A] leading-[25.2px] md:text-[28px] md:leading-[39.2px] md:tracking-[-1px]">
+              <p className="poppins-medium  text-[18px] text-[#1A1A1A] leading-[25.2px] md:text-[28px] md:leading-[39.2px] md:tracking-[-1px]">
                 Ben jij ook op zoek naar een huurwoning? Ontvang het nieuwste woningaanbod van 2.300+ huizensites direct
                 via WhatsApp of e-mail, zodat je als eerste kunt reageren en bezichtigen!
               </p>
             </div>
           </div>
           <div
-            className=" md:hidden flex justify-center p-[20px] w-full bg-white"
+            className=" md:hidden flex justify-center items-center  h-[60px] w-full bg-white"
             style={{
-              boxShadow: '0px 5px 10px 0px #0000001A',
+              boxShadow: '0px 0px 10px 0px #0000001A',
+
               borderRadius: '10px 10px 0px 0px',
             }}
           >
@@ -62,7 +63,7 @@ export const TrusPilot = () => {
               >
                 <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
-                  <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
+                  <p className="poppins text-[12px] md:text-[14px] poppins-regular leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Bespaar zeeën van tijd terwijl onze zoekbot dag en nacht ruim 2.300 woningsites afspeurt.
                   </p>
                 </div>
@@ -75,7 +76,7 @@ export const TrusPilot = () => {
               >
                 <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
-                  <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
+                  <p className="poppins text-[12px] md:text-[14px] poppins-regular leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Reageer als eerste en word veel vaker uitgenodigd voor een bezichtiging.
                   </p>
                 </div>
@@ -83,7 +84,7 @@ export const TrusPilot = () => {
               <div className="flex items-center gap-[15px] py-[30px] ">
                 <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
-                  <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
+                  <p className="poppins text-[12px] md:text-[14px] poppins-regular leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Vind samen met Huurscout woningen in heel NL (niet alleen de grote steden)
                   </p>
                 </div>
