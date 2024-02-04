@@ -27,17 +27,17 @@ const groceries = [
       'Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.',
   },
   {
-    value: 'Vehuren jullie ook woningen?',
+    value: 'Vehuren julie ook woningen?',
     description:
       'Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.',
   },
   {
-    value: 'Wat is jullie inkomenseis',
+    value: 'Wat is julie inkomenseis',
     description:
       'Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.',
   },
   {
-    value: 'Hoe werkt Huurscout?',
+    value: 'Hoe wekt Huurscout?',
     description:
       'Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.',
   },
