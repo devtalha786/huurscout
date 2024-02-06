@@ -49,7 +49,7 @@ const data = [
 export const ReviewsSection = () => {
   return (
     <div
-      className=" min-h-[1836px] mt-[-17px] md:mt-0 bg-[#FFFFFF]  md:flex md:items-center  md:min-h-[661px]  "
+      className=" min-h-[1836px]  md:mt-0 bg-[#FFFFFF]  md:flex md:items-center  md:min-h-[661px]  "
       style={{
         borderRadius: '10px 10px 0px 0px',
       }}
@@ -57,7 +57,12 @@ export const ReviewsSection = () => {
       <div className="max-w-full sm:px-[31px] xl:p-0 xl:max-w-[1118px] w-full mx-auto text-black">
         <div className="grid grid-cols-12 flex-wrap py-[30px]">
           <div className="col-span-12 md:col-span-5 p-4">
-            <div className="img hidden md:block">
+            <div className="md:max-w-[553px] max-w-[326px] mx-auto md:mx-0 w-full  md:pb-0 ">
+              <p className="semibold-font font-semibold text-[26px] text-center text-[#1A1A1A] leading-[25px] ]">
+                Wat anderen zeggen over huurscout
+              </p>
+            </div>
+            <div className="img  md:block py-[30px] flex justify-center">
               <Image
                 src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.svg"
                 width={254}
@@ -65,11 +70,6 @@ export const ReviewsSection = () => {
                 alt="pilot"
                 className="cursor-pointer object-cover"
               />
-            </div>
-            <div className="md:max-w-[553px] max-w-[326px] mx-auto md:mx-0 w-full  md:pb-0 ">
-              <p className="semibold-font font-semibold text-[26px] text-center text-[#1A1A1A] leading-[25px] ]">
-                Wat anderen zeggen over huurscout
-              </p>
             </div>
           </div>
 

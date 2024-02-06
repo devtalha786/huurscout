@@ -1,14 +1,29 @@
+'use client';
 import { Header } from '@/components/Layout/Header';
 import { FirstPage } from '@/components/Verify/FirstPage';
-import React from 'react';
+import { SecondPage } from '@/components/Verify/SecondPage';
+import React, { useState, useEffect } from 'react';
 
-const page = () => {
+const Page = () => {
+  const [showSecondPage, setShowSecondPage] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSecondPage(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div>
       <Header />
-      <FirstPage />
+
+      {!showSecondPage && <FirstPage />}
+
+      {showSecondPage && <SecondPage />}
     </div>
   );
 };
 
-export default page;
+export default Page;

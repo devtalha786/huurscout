@@ -1,26 +1,35 @@
 'use client';
 
 import { containerMaxWidth } from '@/theme/theme';
-import { Button, Container } from '@mantine/core';
+import { Box, Button, Container } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
 
 export const Amsterdam = () => {
   return (
     <>
-      <div className=" max-h-[390px]  md:max-h-[528px]  md:my-[60px]">
-        <Container size={containerMaxWidth} className="navbar  px-[31px]">
-          <div className="bg-[#242c3c] min-h-[390px]  md:max-h-[528px] rounded-[15px] overflow-hidden">
-            <div className="max-w-full sm:px-[31px] xl:p-0 xl:max-w-[1118px] w-full mx-auto ">
+      <Box
+        className="bg-[#242c3c] md:bg-white    md:my-[60px]"
+        sx={(theme) => ({
+          [theme.fn.smallerThan('md')]: {
+            borderRadius: '10px 10px 0px 0px',
+          },
+          borderRadius: '15px',
+        })}
+      >
+        <Container size={containerMaxWidth} className="navbar  md:px-[31px]">
+          <div className="bg-[#242c3c] min-h-[390px]  md:min-h-[528px] rounded-[15px] overflow-hidden">
+            <div className="max-w-full sm:px-[31px] xl:p-0 xl:max-w-[1118px] w-full mx-auto py-[40px] ">
               <div className="flex flex-wrap items-center">
                 {/* Column 1 */}
                 <div className="md:w-5/12 w-full p-4">
-                  <div className="max-w-full md:max-w-[440px] w-full">
+                  <div className="max-w-full md:max-w-[440px] w-full text-center md:text-start">
                     <h1 className="text-[26px] md:text-[34px] text-[#FBF4EA] leading-[44.16px] md:leading-[34px] font-semibold semibold-font">
                       Huurscout vond <span className="text-[#FF8049]">179</span> huurwoningen inamsterdam
                     </h1>
+
                     <div
-                      className="max-w-[209px] w-full md:max-w-[327px] pt-2"
+                      className="max-w-[209px] ml-auto md:ml-0 w-full md:max-w-[327px] pt-2"
                       style={{
                         borderBottom: '2px solid #FBF4EA',
                       }}
@@ -213,7 +222,7 @@ export const Amsterdam = () => {
             </div>
           </div>
         </Container>
-      </div>
+      </Box>
     </>
   );
 };

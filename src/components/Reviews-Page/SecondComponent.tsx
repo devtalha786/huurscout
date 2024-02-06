@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 3,
-    value: 'min. 30m2',
+    value: 'min . 30m2',
   },
   {
     id: 4,
@@ -37,9 +37,11 @@ export const SecondComponent = () => {
       <div className="  min-h-[834px]     md:min-h-[650px] max-w-full  sm:px-[31px] xl:p-0 xl:max-w-[1118px] w-full mx-auto rounded-[15px] py-[50px] ">
         <div className="flex flex-wrap gap-[30px] p-4 md:justify-center mx-4 md:mx-0 ">
           {data.map((item) => (
-            <div className="flex gap-2 items-center">
-              <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
-              <p className="poppins text-[12px] leading-[16.8px] font-normal text-[#1A1A1A]">{item.value}</p>
+            <div className="flex flex-col  items-start">
+              <div className="flex gap-2 items-center">
+                <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
+                <p className="poppins text-[12px] leading-[16.8px] font-normal text-[#1A1A1A]">{item.value}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -125,13 +127,16 @@ export const SecondComponent = () => {
                       }}
                     ></div>
                   </div>
-                  <div className="flex flex-col w-full">
+                  <div className="flex flex-col w-full relative">
                     <div className="p-4">
                       <h1 className="poppins font-bold text-[18px] leading-[25.2px] text-[#242C3C]">2 maanden</h1>
                       <p className="poppins font-medium text-[14px] leading-[19.6px] py-2 text-[#0F172A]">
                         €19.50 /mnd.
                         <span className="text-[#51B37E]">32% korting</span>
                       </p>
+                      <div className="w-[80px] h-[18px] absolute top-[10px] right-[20px] rounded-[10px] bg-[#51B37E] flex items-center justify-center">
+                        <span className="poppins-regular text-[8px]  text-white">meest gekozen</span>
+                      </div>
                     </div>
                     <div
                       className="p-4 bg-[#f8f8fd] w-full"

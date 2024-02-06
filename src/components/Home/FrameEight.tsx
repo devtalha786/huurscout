@@ -4,51 +4,51 @@ import { Button, Container } from '@mantine/core';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import React from 'react';
-const data = [
-  {
-    id: 1,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
-    author: 'ERIK VAN VEEN',
-    desc: 'Geschreven op',
-    source: 'Trustpilot',
-    bg: '#B8B6E7',
-  },
-  {
-    id: 2,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
-    author: 'ERIK VAN VEEN',
-    desc: 'Geschreven op',
-    source: 'Trustpilot',
-    bg: '#FBF4EA',
-  },
-  {
-    id: 3,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
-    author: 'ERIK VAN VEEN',
-    desc: 'Geschreven op',
-    source: 'Trustpilot',
-    bg: '#B8B6E7',
-  },
-  {
-    id: 4,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
-    author: 'ERIK VAN VEEN',
-    desc: 'Geschreven op',
-    source: 'Trustpilot',
-    bg: '#FF8049',
-  },
-  {
-    id: 5,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
-    author: 'ERIK VAN VEEN',
-    desc: 'Geschreven op',
-    source: 'Trustpilot',
-    bg: '#FBF4EA',
-  },
-];
 
 export const FrameEight = () => {
   const pathName = usePathname();
+  const data = [
+    {
+      id: 1,
+      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      author: 'ERIK VAN VEEN',
+      desc: 'Geschreven op',
+      source: 'Trustpilot',
+      bg: '#B8B6E7',
+    },
+    {
+      id: 2,
+      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      author: 'ERIK VAN VEEN',
+      desc: 'Geschreven op',
+      source: 'Trustpilot',
+      bg: pathName == '/' ? '#FBF4EA' : '#FFFFFF',
+    },
+    {
+      id: 3,
+      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      author: 'ERIK VAN VEEN',
+      desc: 'Geschreven op',
+      source: 'Trustpilot',
+      bg: '#B8B6E7',
+    },
+    {
+      id: 4,
+      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      author: 'ERIK VAN VEEN',
+      desc: 'Geschreven op',
+      source: 'Trustpilot',
+      bg: '#FF8049',
+    },
+    {
+      id: 5,
+      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      author: 'ERIK VAN VEEN',
+      desc: 'Geschreven op',
+      source: 'Trustpilot',
+      bg: pathName == '/' ? '#FBF4EA' : '#FFFFFF',
+    },
+  ];
   return (
     <div
       className={` min-h-[1836px] mt-[-17px] md:mt-0 ${
@@ -61,19 +61,19 @@ export const FrameEight = () => {
       <div className="max-w-full sm:px-[31px] xl:p-0 xl:max-w-[1118px] w-full mx-auto text-black">
         <div className="grid grid-cols-12 flex-wrap py-[30px]">
           <div className="col-span-12 md:col-span-5 p-4">
-            <div className="img hidden md:block">
-              <Image
-                src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.svg"
-                width={254}
-                height={50}
-                alt="pilot"
-                className="cursor-pointer object-cover"
-              />
-            </div>
             <div className="md:max-w-[553px] max-w-[326px] mx-auto md:mx-0 w-full  md:pb-0 ">
               <p className="semibold-font font-semibold text-[26px] text-center text-[#1A1A1A] leading-[25px] ]">
                 Wat anderen zeggen over huurscout
               </p>
+            </div>
+            <div className="img mt-4 flex justify-center items-center max-w-[214px] mx-auto h-[50px] bg-white rounded-[45px] shadow-md">
+              <Image
+                src="/assets/images/Trustpilot.svg"
+                width={172}
+                height={50}
+                alt="Trustpilot"
+                className="cursor-pointer object-cover"
+              />
             </div>
           </div>
 

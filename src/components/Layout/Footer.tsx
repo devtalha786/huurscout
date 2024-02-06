@@ -132,13 +132,15 @@ export const Footer = () => {
 
         <div className="w-full text-center py-[30px] md:max-w-[553px] max-w-[326px] mx-auto flex justify-center">
           <div>
-            <Image
-              src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.svg"
-              width={214}
-              height={42}
-              alt="pilot"
-              className="cursor-pointer object-cover"
-            />
+            <div className="img mt-4 flex justify-center items-center max-w-[214px] mx-auto h-[50px] bg-white rounded-[45px] shadow-md">
+              <Image
+                src="/assets/images/Trustpilot.svg"
+                width={172}
+                height={50}
+                alt="Trustpilot"
+                className="cursor-pointer object-cover"
+              />
+            </div>
             <div className="flex pt-[20px] gap-[20px]">
               <Link href="/privacy-policy">
                 <p className="poppins  font-normal underline    text-[12px]  text-[#B8B6E7] leading-[21.6px] ">
