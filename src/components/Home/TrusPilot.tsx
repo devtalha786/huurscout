@@ -10,10 +10,15 @@ export const TrusPilot = () => {
       <div className="max-w-full sm:px-[31px] xl:p-0 xl:max-w-[1118px] w-full mx-auto text-black">
         <div className="flex flex-wrap">
           <div className="md:w-7/12 w-full p-4">
-            <div className="img hidden md:block">
+            <div
+              className="img hidden md:flex justify-center items-center max-w-[254px] h-[50px] bg-white rounded-[45px]"
+              style={{
+                boxShadow: '0px 5px 7.5px 0px #0000001A',
+              }}
+            >
               <Image
-                src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.png"
-                width={254}
+                src="/assets/images/Trustpilot.svg"
+                width={172}
                 height={50}
                 alt="pilot"
                 className="cursor-pointer object-cover"
@@ -27,7 +32,7 @@ export const TrusPilot = () => {
             </div>
           </div>
           <div
-            className=" md:hidden flex justify-center items-center  h-[60px] w-full bg-white"
+            className=" md:hidden flex justify-center items-center  h-[70px] w-full bg-white"
             style={{
               boxShadow: '0px 0px 10px 0px #0000001A',
 
@@ -36,25 +41,23 @@ export const TrusPilot = () => {
           >
             <Button
               variant="filled"
-              className="w-[329px] mx-auto bg-[#FF8049] rounded-[100px] medium-font text-[14px] leading-[24px] text-white "
-              style={{
-                padding: '8px 20px 12px 20px',
-              }}
+              className="w-[329px] h-[52px] flex items-center justify-center mx-auto bg-[#FF8049] rounded-[100px] medium-font text-[14px] leading-[24px] text-white "
             >
               Stel Whatsapp alert in
             </Button>
           </div>
           <div className="md:w-5/12 w-full  ">
             <div className="max-w-full md:max-w-[440px] w-full mx-auto p-[40px]  bg-white md:rounded-[15px]">
-              <div className="img  md:hidden flex justify-center py-[31px]">
+              <div className="img md:hidden flex justify-center items-center max-w-[214px] mx-auto h-[50px] bg-white rounded-[45px] shadow-md">
                 <Image
-                  src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.svg"
-                  width={214}
-                  height={42}
-                  alt="pilot"
+                  src="/assets/images/Trustpilot.svg"
+                  width={172}
+                  height={50}
+                  alt="Trustpilot"
                   className="cursor-pointer object-cover"
                 />
               </div>
+
               <div
                 className="flex items-center gap-[15px] py-[30px] "
                 style={{

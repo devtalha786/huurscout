@@ -174,3 +174,9 @@ a {
 .mantine-1ryt1ht {
   font-weight: 500 !important;
 }
+.mantine-1hdxrs1[data-active] {
+  background-color: #51b37e !important;
+}
+.mantine-1hdxrs1 {
+  border: 1px solid #b8b6e7 !important;
+}

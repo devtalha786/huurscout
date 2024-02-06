@@ -31,9 +31,9 @@ export const FooterSection = () => {
       style={{ borderRadius: '10px 10px 0px 0px' }}
     >
       <Container size={containerMaxWidth2} className="w-full">
-        <div className="flex flex-wrap w-full py-[40px]">
+        <div className="grid grid-cols-12 py-[40px]">
           {/* Column 1 */}
-          <div className="md:w-5/12 w-full p-4 text-black mx-4">
+          <div className="md:col-span-5  col-span-12 p-4 text-black mx-4">
             <div className="">
               <h1 className="semibold-font font-semibold text-[26px] leading-[24.96px] md:text-[34px] md:leading-[34px] text-[#1A1A1A]">
                 <span className="bg-txt2"> Drie redenen</span> <br /> waarom het met huurscout wel lukt!
@@ -42,7 +42,7 @@ export const FooterSection = () => {
           </div>
 
           {/* Column 2 */}
-          <div className="md:w-7/12 w-full p-4">
+          <div className="md:col-span-7 col-span-12 p-4">
             <div className="flex flex-col gap-[50px]">
               {data.map((item) => (
                 <div className="flex justify-between flex-col-reverse md:flex-row">
@@ -63,7 +63,7 @@ export const FooterSection = () => {
                     src="/assets/images/Group.svg"
                     height={1000}
                     width={1000}
-                    className="max-w-[315px] h-auto"
+                    className="max-w-full h-auto"
                     alt="1"
                   />
                 </div>
