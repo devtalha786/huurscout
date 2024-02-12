@@ -1,6 +1,4 @@
 'use client';
-import { containerMaxWidth2 } from '@/theme/theme';
-import { Button, Container } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
 
@@ -11,7 +9,13 @@ export const FirstComponent = () => {
         <div className="grid grid-cols-12 flex-wrap py-[30px]">
           <div className="col-span-12 md:col-span-5 p-4">
             <div className="mx-auto md:mx-0 w-full  md:pb-0 flex gap-3 items-start ">
-              <Image src="/assets/images/wrong.svg" width={22} height={22} alt="pilot" className="cursor-pointer " />
+              <Image
+                src="/assets/images/wrong.svg"
+                width={22}
+                height={22}
+                alt="pilot"
+                className="cursor-pointer "
+              />
               <p className="semibold-font max-w-[289px] md:max-w-full   font-semibold text-[26px] text-start text-[#1A1A1A] leading-[25px] ]">
                 Jij hebt 100+ woningen gemist in de afgelopen 30 dagen
               </p>
@@ -20,10 +24,30 @@ export const FirstComponent = () => {
 
           <div className="col-span-12 md:col-span-7 p-4  ">
             <div className=" flex gap-3 overflow-hidden overflow-x-auto scr">
-              <Image src="/assets/images/Group 8231.svg" height={165} width={147} alt="" />
-              <Image src="/assets/images/Group 8230.svg" height={165} width={147} alt="" />
-              <Image src="/assets/images/Group 8229.svg" height={165} width={147} alt="" />
-              <Image src="/assets/images/Group 8229.svg" height={165} width={147} alt="" />
+              <Image
+                src="/assets/images/Group 8231.svg"
+                height={165}
+                width={147}
+                alt=""
+              />
+              <Image
+                src="/assets/images/Group 8230.svg"
+                height={165}
+                width={147}
+                alt=""
+              />
+              <Image
+                src="/assets/images/Group 8229.svg"
+                height={165}
+                width={147}
+                alt=""
+              />
+              <Image
+                src="/assets/images/Group 8229.svg"
+                height={165}
+                width={147}
+                alt=""
+              />
             </div>
           </div>
         </div>

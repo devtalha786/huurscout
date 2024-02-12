@@ -17,7 +17,8 @@ module.exports = {
         lightText: '#A0A0A0',
         lightWhite: '#FFFFFF66',
         grayBorder: '#E8E9EC',
-        lightBlue: 'linear-gradient(0deg, rgba(29, 43, 57, 0.39), rgba(29, 43, 57, 0.39))',
+        lightBlue:
+          'linear-gradient(0deg, rgba(29, 43, 57, 0.39), rgba(29, 43, 57, 0.39))',
         grey: '#1D2B3933',
         greyText: '#1D2B3980',
         darkGray: '#1D2B3999',

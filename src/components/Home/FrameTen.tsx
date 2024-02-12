@@ -1,6 +1,4 @@
 'use client';
-import { containerMaxWidth2 } from '@/theme/theme';
-import { Button, Container } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
 
@@ -21,15 +19,17 @@ export const FrameTen = () => {
               </p>
 
               <p className=" md:max-w-full max-w-[299px] poppins-medium text-[14px] leading-[19.6px] text-[#1A1A1A] py-[30px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <p className=" md:max-w-full max-w-[299px] poppins-medium text-[14px] leading-[19.6px] text-[#1A1A1A] ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.{' '}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
               </p>
             </div>
           </div>
@@ -50,9 +50,11 @@ export const FrameTen = () => {
                 Met name in Amsterdam is 40% gestegen
               </p>
               <p className=" md:max-w-full max-w-[299px] poppins-medium text-[14px] leading-[19.6px] text-[#1A1A1A] ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate.
               </p>
             </div>
           </div>

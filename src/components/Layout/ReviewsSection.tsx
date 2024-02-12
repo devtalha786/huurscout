@@ -1,12 +1,12 @@
 'use client';
-import { containerMaxWidth2 } from '@/theme/theme';
-import { Button, Container, Pagination } from '@mantine/core';
+import { Pagination } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
 const data = [
   {
     id: 1,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
     author: 'ERIK VAN VEEN',
     desc: 'Geschreven op',
     source: 'Trustpilot',
@@ -14,7 +14,8 @@ const data = [
   },
   {
     id: 2,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
     author: 'ERIK VAN VEEN',
     desc: 'Geschreven op',
     source: 'Trustpilot',
@@ -22,7 +23,8 @@ const data = [
   },
   {
     id: 3,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
     author: 'ERIK VAN VEEN',
     desc: 'Geschreven op',
     source: 'Trustpilot',
@@ -30,7 +32,8 @@ const data = [
   },
   {
     id: 4,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
     author: 'ERIK VAN VEEN',
     desc: 'Geschreven op',
     source: 'Trustpilot',
@@ -38,7 +41,8 @@ const data = [
   },
   {
     id: 5,
-    quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
     author: 'ERIK VAN VEEN',
     desc: 'Geschreven op',
     source: 'Trustpilot',
@@ -82,7 +86,12 @@ export const ReviewsSection = () => {
                   style={{ background: item.bg }}
                 >
                   <div className="md:w-[300px]">
-                    <Image src="/assets/images/Group 8223.svg" height={10} width={58.33} alt="stars" />
+                    <Image
+                      src="/assets/images/Group 8223.svg"
+                      height={10}
+                      width={58.33}
+                      alt="stars"
+                    />
                     <p className="text-[18px] leading-[25.2px] font-medium poppins text-[#1A1A1A] pt-[20px]">
                       {item.quote}
                     </p>
@@ -93,7 +102,8 @@ export const ReviewsSection = () => {
                         {item.author}
                       </h2>
                       <p className="text-[12px] leading-[16.8px] font-normal poppins text-[#1A1A1A] ">
-                        {item.desc} <span className="underline"> {item.source} </span>
+                        {item.desc}{' '}
+                        <span className="underline"> {item.source} </span>
                       </p>
                     </div>
                   </div>

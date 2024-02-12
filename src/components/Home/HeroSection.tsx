@@ -16,7 +16,8 @@ export const HeroSection = () => {
                   letterSpacing: '-1px',
                 }}
               >
-                Vind EN reageer als <span className="bg-txt">eerste</span> op EEN HUUR WONING
+                Vind EN reageer als <span className="bg-txt">eerste</span> op
+                EEN HUUR WONING
               </h1>
               <div className="btn hidden md:block">
                 <Button

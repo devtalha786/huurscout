@@ -33,6 +33,7 @@
     "@mantine/dates": "6.0.17",
     "@mantine/hooks": "6.0.17",
     "@mantine/next": "6.0.17",
+    "@react-hook/media-query": "1.1.1",
     "embla-carousel-react": "7.1.0",
     "next": "13.4.12",
     "react": "18.2.0",

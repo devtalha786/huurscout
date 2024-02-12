@@ -1,7 +1,7 @@
 'use client';
 
 import { containerMaxWidth } from '@/theme/theme';
-import { Box, Button, Container } from '@mantine/core';
+import { Box, Container } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
 
@@ -24,8 +24,16 @@ export const Amsterdam = () => {
                 {/* Column 1 */}
                 <div className="md:w-5/12 w-full p-4">
                   <div className="max-w-full md:max-w-[440px] w-full text-center md:text-start">
-                    <h1 className="text-[26px] md:text-[34px] text-[#FBF4EA] leading-[44.16px] md:leading-[34px] font-semibold semibold-font">
-                      Huurscout vond <span className="text-[#FF8049]">179</span> huurwoningen inamsterdam
+                    <h1 className="text-[26px] relative md:text-[34px] text-[#FBF4EA] leading-[25px] md:leading-[34px] font-semibold semibold-font">
+                      Huurscout vond <span className="text-[#FF8049]">179</span>{' '}
+                      huurwoningen in Amsterdam
+                      <Image
+                        src="/assets/images/Polygon 1.svg"
+                        className="inline-block ml-2" // Add margin or adjust as needed
+                        height={14}
+                        width={14}
+                        alt="Polygon 1"
+                      />
                     </h1>
 
                     <div
@@ -66,7 +74,8 @@ export const Amsterdam = () => {
                         </div>
                         <div className="pt-[18px] text-center">
                           <h2 className="text-[12px] md:text-[14px] text-[#ffff] leading-[16.8pxpx] md:leading-[19.6px] font-bold poppins">
-                            Jan Luijkenstraat <br /> <span className="font-normal">Pararius</span>
+                            Jan Luijkenstraat <br />{' '}
+                            <span className="font-normal">Pararius</span>
                           </h2>
                         </div>
                       </div>
@@ -95,7 +104,8 @@ export const Amsterdam = () => {
                         </div>
                         <div className="pt-[18px] text-center">
                           <h2 className="text-[12px] md:text-[14px] text-[#ffff] leading-[16.8pxpx] md:leading-[19.6px] font-bold poppins">
-                            Jan Luijkenstraat <br /> <span className="font-normal">Pararius</span>
+                            Jan Luijkenstraat <br />{' '}
+                            <span className="font-normal">Pararius</span>
                           </h2>
                         </div>
                       </div>
@@ -124,7 +134,8 @@ export const Amsterdam = () => {
                         </div>
                         <div className="pt-[18px] text-center">
                           <h2 className="text-[12px] md:text-[14px] text-[#ffff] leading-[16.8pxpx] md:leading-[19.6px] font-bold poppins">
-                            Jan Luijkenstraat <br /> <span className="font-normal">Pararius</span>
+                            Jan Luijkenstraat <br />{' '}
+                            <span className="font-normal">Pararius</span>
                           </h2>
                         </div>
                       </div>
@@ -153,7 +164,8 @@ export const Amsterdam = () => {
                         </div>
                         <div className="pt-[18px] text-center">
                           <h2 className="text-[12px] md:text-[14px] text-[#ffff] leading-[16.8pxpx] md:leading-[19.6px] font-bold poppins">
-                            Jan Luijkenstraat <br /> <span className="font-normal">Pararius</span>
+                            Jan Luijkenstraat <br />{' '}
+                            <span className="font-normal">Pararius</span>
                           </h2>
                         </div>
                       </div>
@@ -182,7 +194,8 @@ export const Amsterdam = () => {
                         </div>
                         <div className="pt-[18px] text-center">
                           <h2 className="text-[12px] md:text-[14px] text-[#ffff] leading-[16.8pxpx] md:leading-[19.6px] font-bold poppins">
-                            Jan Luijkenstraat <br /> <span className="font-normal">Pararius</span>
+                            Jan Luijkenstraat <br />{' '}
+                            <span className="font-normal">Pararius</span>
                           </h2>
                         </div>
                       </div>
@@ -211,7 +224,8 @@ export const Amsterdam = () => {
                         </div>
                         <div className="pt-[18px] text-center">
                           <h2 className="text-[12px] md:text-[14px] text-[#ffff] leading-[16.8pxpx] md:leading-[19.6px] font-bold poppins">
-                            Jan Luijkenstraat <br /> <span className="font-normal">Pararius</span>
+                            Jan Luijkenstraat <br />{' '}
+                            <span className="font-normal">Pararius</span>
                           </h2>
                         </div>
                       </div>

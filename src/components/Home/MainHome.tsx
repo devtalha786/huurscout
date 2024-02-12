@@ -1,7 +1,5 @@
 'use client';
 import React from 'react';
-import { Header } from '../Layout/Header';
-import HeaderBar from '../Layout/HeaderBar';
 import { HeroSection } from './HeroSection';
 import { TrusPilot } from './TrusPilot';
 import { Amsterdam } from './Amsterdam';
@@ -13,7 +11,6 @@ import { FrameSeven } from './FrameSeven';
 import { FrameEight } from './FrameEight';
 import { FrameNine } from './FrameNine';
 import { FrameTen } from './FrameTen';
-import { Footer } from '../Layout/Footer';
 import MainLayout from '../Layout/MainLayout';
 
 export const MainHome = () => {

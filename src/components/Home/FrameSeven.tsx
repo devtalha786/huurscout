@@ -27,14 +27,20 @@ export const FrameSeven = () => {
                     Vertel ons jouw woonwensen
                   </h2>
                   <div className="flex justify-center pt-[20px]">
-                    <Image src="/assets/images/Group 392.svg" height={182} width={235} alt="" />
+                    <Image
+                      src="/assets/images/Group 392.svg"
+                      height={182}
+                      width={235}
+                      alt=""
+                    />
                   </div>
                   <p className="poppins font-bold text-[10px] leading-[15px] tracking-[1.5px] text-[#1A1A1A]">
                     STAP 1/3
                   </p>
                   <p className="poppins font-medium text-[14px] leading-[19.6px] text-[#1A1A1A]">
-                    Plaats in één minuut jouw zoekopdracht en onze zoekbot begint direct met het vinden van huizen die
-                    passen bij jouw woonwensen.
+                    Plaats in één minuut jouw zoekopdracht en onze zoekbot
+                    begint direct met het vinden van huizen die passen bij jouw
+                    woonwensen.
                   </p>
                 </div>
               </div>
@@ -44,34 +50,66 @@ export const FrameSeven = () => {
                     Vertel ons jouw woonwensen
                   </h2>
                   <div className="flex justify-center pt-[20px]">
-                    <Image src="/assets/images/Group 392.svg" height={182} width={235} alt="" />
+                    <Image
+                      src="/assets/images/Group 392.svg"
+                      height={182}
+                      width={235}
+                      alt=""
+                    />
                   </div>
                   <p className="poppins font-bold text-[10px] leading-[15px] tracking-[1.5px] text-[#1A1A1A]">
                     STAP 1/3
                   </p>
                   <p className="poppins font-medium text-[14px] leading-[19.6px] text-[#1A1A1A]">
-                    Plaats in één minuut jouw zoekopdracht en onze zoekbot begint direct met het vinden van huizen die
-                    passen bij jouw woonwensen.
+                    Plaats in één minuut jouw zoekopdracht en onze zoekbot
+                    begint direct met het vinden van huizen die passen bij jouw
+                    woonwensen.
                   </p>
                 </div>
               </div>
             </div>
             <div className="w-full  md:flex justify-between hidden pt-[30px] items-center ">
               <div className="flex gap-2 items-center">
-                <Image src="/assets/images/button.svg" height={40} width={40} alt="arrow-left" />
-                <Image src="/assets/images/button (1).svg" height={40} width={40} alt="arrow-left" />
+                <Image
+                  src="/assets/images/button.svg"
+                  height={40}
+                  width={40}
+                  alt="arrow-left"
+                />
+                <Image
+                  src="/assets/images/button (1).svg"
+                  height={40}
+                  width={40}
+                  alt="arrow-left"
+                />
               </div>
               <div className="w-[400px] bg-gray-200 rounded-full h-[4px] dark:bg-[#42485e]">
-                <div className="bg-[#B8B6E7] h-[4px] rounded-full" style={{ width: '25%' }}></div>
+                <div
+                  className="bg-[#B8B6E7] h-[4px] rounded-full"
+                  style={{ width: '25%' }}
+                ></div>
               </div>
             </div>
             <div className="w-full flex justify-between md:hidden pt-[30px] items-center ">
               <div className="w-[101px] bg-gray-200 rounded-full h-[4px] dark:bg-[#42485e]">
-                <div className="bg-[#B8B6E7] h-[4px] rounded-full" style={{ width: '25%' }}></div>
+                <div
+                  className="bg-[#B8B6E7] h-[4px] rounded-full"
+                  style={{ width: '25%' }}
+                ></div>
               </div>
               <div className="flex gap-2 items-center">
-                <Image src="/assets/images/button.svg" height={40} width={40} alt="arrow-left" />
-                <Image src="/assets/images/button (1).svg" height={40} width={40} alt="arrow-left" />
+                <Image
+                  src="/assets/images/button.svg"
+                  height={40}
+                  width={40}
+                  alt="arrow-left"
+                />
+                <Image
+                  src="/assets/images/button (1).svg"
+                  height={40}
+                  width={40}
+                  alt="arrow-left"
+                />
               </div>
             </div>
           </div>

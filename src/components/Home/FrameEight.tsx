@@ -1,6 +1,4 @@
 'use client';
-import { containerMaxWidth2 } from '@/theme/theme';
-import { Button, Container } from '@mantine/core';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import React from 'react';
@@ -10,7 +8,8 @@ export const FrameEight = () => {
   const data = [
     {
       id: 1,
-      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      quote:
+        ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
       author: 'ERIK VAN VEEN',
       desc: 'Geschreven op',
       source: 'Trustpilot',
@@ -18,7 +17,8 @@ export const FrameEight = () => {
     },
     {
       id: 2,
-      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      quote:
+        ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
       author: 'ERIK VAN VEEN',
       desc: 'Geschreven op',
       source: 'Trustpilot',
@@ -26,7 +26,8 @@ export const FrameEight = () => {
     },
     {
       id: 3,
-      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      quote:
+        ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
       author: 'ERIK VAN VEEN',
       desc: 'Geschreven op',
       source: 'Trustpilot',
@@ -34,7 +35,8 @@ export const FrameEight = () => {
     },
     {
       id: 4,
-      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      quote:
+        ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
       author: 'ERIK VAN VEEN',
       desc: 'Geschreven op',
       source: 'Trustpilot',
@@ -42,7 +44,8 @@ export const FrameEight = () => {
     },
     {
       id: 5,
-      quote: ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+      quote:
+        ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
       author: 'ERIK VAN VEEN',
       desc: 'Geschreven op',
       source: 'Trustpilot',
@@ -66,10 +69,10 @@ export const FrameEight = () => {
                 Wat anderen zeggen over huurscout
               </p>
             </div>
-            <div className="img mt-4 flex justify-center items-center max-w-[214px] mx-auto h-[50px] bg-white rounded-[45px] shadow-md">
+            <div className="img mt-4 flex justify-center items-center ">
               <Image
-                src="/assets/images/Trustpilot.svg"
-                width={172}
+                src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.svg"
+                width={271}
                 height={50}
                 alt="Trustpilot"
                 className="cursor-pointer object-cover"
@@ -86,19 +89,30 @@ export const FrameEight = () => {
                   style={{ background: item.bg }}
                 >
                   <div className="md:w-[300px]">
-                    <Image src="/assets/images/Group 8223.svg" height={10} width={58.33} alt="stars" />
+                    <Image
+                      src="/assets/images/Group 8223.svg"
+                      height={10}
+                      width={58.33}
+                      alt="stars"
+                    />
                     <p className="text-[18px] leading-[25.2px] font-medium poppins text-[#1A1A1A] pt-[20px]">
                       {item.quote}
                     </p>
                   </div>
                   <div className="flex gap-[20px] items-center">
-                    <Image src="/assets/images/Mask group.svg" height={50} width={50} alt="" />
+                    <Image
+                      src="/assets/images/Mask group.svg"
+                      height={70}
+                      width={70}
+                      alt=""
+                    />
                     <div className="">
                       <h2 className="text-[10px] leading-[15px] font-bold  tracking-[1.5px] text-[#001B0F] poppins  ">
                         {item.author}
                       </h2>
                       <p className="text-[12px] leading-[16.8px] font-normal poppins text-[#1A1A1A] ">
-                        {item.desc} <span className="underline"> {item.source} </span>
+                        {item.desc}{' '}
+                        <span className="underline"> {item.source} </span>
                       </p>
                     </div>
                   </div>

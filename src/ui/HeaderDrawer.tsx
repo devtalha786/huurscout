@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer, Button, ModalBaseOverlayProps } from '@mantine/core';
+import { Drawer, ModalBaseOverlayProps } from '@mantine/core';
 
 const menuList = [
   {

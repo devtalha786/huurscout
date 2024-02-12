@@ -7,13 +7,23 @@ export const metadata: Metadata = {
   description: `Huurs`,
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
         {/* Include the Poppins font from Google Fonts */}
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>
         <RootStyleRegistry>{children}</RootStyleRegistry>

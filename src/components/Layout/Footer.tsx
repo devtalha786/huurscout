@@ -39,7 +39,8 @@ export const Footer = () => {
           <div className="col-span-12 md:col-span-6 p-4">
             <div className="md:max-w-[553px] max-w-[326px] mx-auto md:mx-0 w-full  md:pb-0 ">
               <p className="semibold-font md:max-w-[326px] max-w-full font-semibold text-center text-[46px]  text-[#FBF4EA] leading-[44.16px] tracking-[-1px] ">
-                Vind EN reageer als <span className="bg-txt ">eerste </span> op EEN HUUR WONING
+                Vind EN reageer als <span className="bg-txt ">eerste </span> op
+                EEN HUUR WONING
               </p>
             </div>
           </div>
@@ -59,9 +60,12 @@ export const Footer = () => {
         <div className="grid grid-cols-12 flex-wrap py-[30px]">
           <div className="col-span-12 md:col-span-6 p-4">
             <div className="md:max-w-[553px] max-w-[326px] mx-auto md:mx-0 w-full  md:pb-0 ">
-              <p className="poppins  font-semibold  text-[16px]  text-[#FBF4EA] leading-[22.4px]">Huurscout</p>
-              <p className="poppins  font-normal max-w-[243px]  text-[12px]  text-[#FBF4EA] leading-[16.8px] py-[30px]">
-                Ontvang nieuwe huurwoningen direct via WhatsApp of e-mail en wees de eerste die reageert.
+              <p className="poppins  font-semibold  text-[16px]  text-[#FBF4EA] leading-[22.4px] pl-4">
+                Huurscout
+              </p>
+              <p className="poppins  font-normal max-w-[243px]  text-[12px]  text-[#FBF4EA] pl-4 leading-[16.8px] py-[30px]">
+                Ontvang nieuwe huurwoningen direct via WhatsApp of e-mail en
+                wees de eerste die reageert.
               </p>
               <div
                 className=" md:hidden"
@@ -74,7 +78,7 @@ export const Footer = () => {
 
           <div className="col-span-12 md:col-span-6 p-4  ">
             <div className=" md:max-w-[553px] max-w-[326px] mx-auto">
-              <ul className="list-none relative  flex flex-col gap-[30px] pr-[20px]">
+              <ul className="list-none pl-4 relative  flex flex-col gap-[30px] pr-[20px]">
                 {menuList.map((item, index) => (
                   <li
                     key={index}
@@ -132,10 +136,10 @@ export const Footer = () => {
 
         <div className="w-full text-center py-[30px] md:max-w-[553px] max-w-[326px] mx-auto flex justify-center">
           <div>
-            <div className="img mt-4 flex justify-center items-center max-w-[214px] mx-auto h-[50px] bg-white rounded-[45px] shadow-md">
+            <div className="img mt-4 flex justify-center ">
               <Image
-                src="/assets/images/Trustpilot.svg"
-                width={172}
+                src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.svg"
+                width={214}
                 height={50}
                 alt="Trustpilot"
                 className="cursor-pointer object-cover"

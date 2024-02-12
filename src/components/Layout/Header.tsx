@@ -16,17 +16,30 @@ export const Header = () => {
     { name: 'maar hoe?', href: '/', current: pathname === '/' },
     { name: 'REVIEWS?', href: '/reviews', current: pathname === '/reviews' },
     { name: 'over ons', href: '/overons', current: pathname === '/overons' },
-    { name: 'vragen?', href: '/verify', current: pathname === '/verify' || pathname === '/verify-success' },
-    { name: 'contact', href: '/contact-us', current: pathname === '/contact-us' },
+    {
+      name: 'vragen?',
+      href: '/verify',
+      current: pathname === '/verify' || pathname === '/verify-success',
+    },
+    {
+      name: 'contact',
+      href: '/contact-us',
+      current: pathname === '/contact-us',
+    },
   ];
   return (
     <>
       <HeaderDrawer opened={opened} close={close} />
       <div className="bg-[#242c3c]">
-        <Container size={containerMaxWidth} className="navbar py-[21px] px-[31px]">
+        <Container
+          size={containerMaxWidth}
+          className="navbar py-[10px] md:py-[20px] px-[31px] sticky"
+        >
           <div className="flex items-center justify-between">
             <div className="title">
-              <h2 className="bold-font text-[20.31px] leading-[19.5px] text-[#FF8049] font-extrabold">HUURSCOUT</h2>
+              <h2 className="bold-font text-[20.31px] leading-[19.5px] text-[#FF8049] font-extrabold">
+                HUURSCOUT
+              </h2>
             </div>
             <div className="menu-list ">
               <ul className="list-none relative hidden md:flex gap-[30px] pr-[20px]">
@@ -42,7 +55,13 @@ export const Header = () => {
                 ))}
               </ul>
               <div className="flex md:hidden">
-                <Image src="/assets/images/burger.svg" onClick={open} height={32} width={32} alt="burger" />
+                <Image
+                  src="/assets/images/bur.svg"
+                  onClick={open}
+                  height={32}
+                  width={32}
+                  alt="burger"
+                />
               </div>
             </div>
           </div>

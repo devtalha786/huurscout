@@ -24,9 +24,21 @@ export const ReviewsCarousel: React.FC = () => {
 
   return (
     <>
-      <Carousel dragFree slideSize="50%" slideGap="md" height={200} getEmblaApi={setEmbla} initialSlide={2}>
+      <Carousel
+        dragFree
+        slideSize="50%"
+        slideGap="md"
+        height={200}
+        getEmblaApi={setEmbla}
+        initialSlide={2}
+      >
         <Carousel.Slide>
-          <Image src="/assets/images/image 245.svg" height={100} width={100} alt="" />
+          <Image
+            src="/assets/images/image 245.svg"
+            height={100}
+            width={100}
+            alt=""
+          />
         </Carousel.Slide>
         <Carousel.Slide>2</Carousel.Slide>
         <Carousel.Slide>3</Carousel.Slide>

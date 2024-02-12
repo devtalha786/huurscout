@@ -36,7 +36,8 @@ export const FooterSection = () => {
           <div className="md:col-span-5  col-span-12 p-4 text-black mx-4">
             <div className="">
               <h1 className="semibold-font font-semibold text-[26px] leading-[24.96px] md:text-[34px] md:leading-[34px] text-[#1A1A1A]">
-                <span className="bg-txt2"> Drie redenen</span> <br /> waarom het met huurscout wel lukt!
+                <span className="bg-txt2"> Drie redenen</span> <br /> waarom het
+                met huurscout wel lukt!
               </h1>
             </div>
           </div>
@@ -44,8 +45,11 @@ export const FooterSection = () => {
           {/* Column 2 */}
           <div className="md:col-span-7 col-span-12 p-4">
             <div className="flex flex-col gap-[50px]">
-              {data.map((item) => (
-                <div className="flex justify-between flex-col-reverse md:flex-row">
+              {data.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex justify-between flex-col-reverse md:flex-row"
+                >
                   <div className="flex gap-[20px] items-start py-[20px] w-full">
                     <div className=" ">
                       <p className="poppins-bold h-[22px] w-[22px] rounded-[50%] flex items-center justify-center bg-[#51B37E] text-white text-[12px]">
@@ -53,7 +57,9 @@ export const FooterSection = () => {
                       </p>
                     </div>
                     <div className="md:max-w-[213px] maw-w-[191px]">
-                      <h2 className="poppins font-bold text-[18px] leading-[19.8px] text-[#1A1A1A]">{item.author}</h2>
+                      <h2 className="poppins font-bold text-[18px] leading-[19.8px] text-[#1A1A1A]">
+                        {item.author}
+                      </h2>
                       <p className="poppins font-normal text-[14px] leading-[19.8px] text-[#1A1A1A] pt-[20px]">
                         {item.quote}
                       </p>

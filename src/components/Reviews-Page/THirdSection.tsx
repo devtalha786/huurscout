@@ -1,6 +1,5 @@
 'use client';
-import { containerMaxWidth2 } from '@/theme/theme';
-import { Button, Container } from '@mantine/core';
+import { Button } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
 
@@ -48,14 +47,21 @@ export const ThirdSection = () => {
         <div className="grid grid-cols-12">
           <div className="md:col-span-6 col-span-12 w-full p-4 mx-4 ">
             <div className="max-w-full md:max-w-[440px] w-full mx-auto py-[40px]  bg-white md:rounded-[15px]">
-              <p className="font-bold poppins text-[12px] leading-[16.8px] text-[#1A1A1A]">Oude manier</p>
+              <p className="font-bold poppins text-[12px] leading-[16.8px] text-[#1A1A1A]">
+                Oude manier
+              </p>
               <div
-                className="flex items-center gap-[15px] py-[30px] "
+                className="flex items-center gap-[15px] py-[15px] "
                 style={{
                   borderBottom: '1.25px solid #dbdbf3',
                 }}
               >
-                <Image src="/assets/images/crosss.svg" width={30} height={30} alt="tick" />
+                <Image
+                  src="/assets/images/crosss.svg"
+                  width={30}
+                  height={30}
+                  alt="tick"
+                />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
                   <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Jouw zoekbot checkt dag en nacht 1.400+ websites
@@ -63,12 +69,17 @@ export const ThirdSection = () => {
                 </div>
               </div>
               <div
-                className="flex items-center gap-[15px] py-[30px] "
+                className="flex items-center gap-[15px] py-[15px] "
                 style={{
                   borderBottom: '1.25px solid #dbdbf3',
                 }}
               >
-                <Image src="/assets/images/crosss.svg" width={30} height={30} alt="tick" />
+                <Image
+                  src="/assets/images/crosss.svg"
+                  width={30}
+                  height={30}
+                  alt="tick"
+                />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
                   <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Jij checkt dagelijks elke woningsite handmatig
@@ -76,20 +87,30 @@ export const ThirdSection = () => {
                 </div>
               </div>
               <div
-                className="flex items-center gap-[15px] py-[30px] "
+                className="flex items-center gap-[15px] py-[15px] "
                 style={{
                   borderBottom: '1.25px solid #dbdbf3',
                 }}
               >
-                <Image src="/assets/images/crosss.svg" width={30} height={30} alt="tick" />
+                <Image
+                  src="/assets/images/crosss.svg"
+                  width={30}
+                  height={30}
+                  alt="tick"
+                />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
                   <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Jij ziet een woning gemiddeld pas na 18 uur
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-[15px] py-[30px] ">
-                <Image src="/assets/images/crosss.svg" width={30} height={30} alt="tick" />
+              <div className="flex items-center gap-[15px] py-[15px] ">
+                <Image
+                  src="/assets/images/crosss.svg"
+                  width={30}
+                  height={30}
+                  alt="tick"
+                />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
                   <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Je reageert te laat op de woningen
@@ -101,14 +122,21 @@ export const ThirdSection = () => {
 
           <div className="md:col-span-6 col-span-12 w-full p-4 mx-4  ">
             <div className="max-w-full md:max-w-[440px] w-full mx-auto py-[40px]  bg-white md:rounded-[15px]">
-              <p className="font-bold poppins text-[12px] leading-[16.8px] text-[#1A1A1A]">Huurscout manier</p>
+              <p className="font-bold poppins text-[12px] leading-[16.8px] text-[#1A1A1A]">
+                Huurscout manier
+              </p>
               <div
-                className="flex items-center gap-[15px] py-[30px] "
+                className="flex items-center gap-[15px] py-[15px] "
                 style={{
                   borderBottom: '1.25px solid #dbdbf3',
                 }}
               >
-                <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
+                <Image
+                  src="/assets/images/Untitled.svg"
+                  width={30}
+                  height={30}
+                  alt="tick"
+                />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
                   <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Jouw zoekbot checkt dag en nacht 1.400+ websites
@@ -116,12 +144,17 @@ export const ThirdSection = () => {
                 </div>
               </div>
               <div
-                className="flex items-center gap-[15px] py-[30px] "
+                className="flex items-center gap-[15px] py-[15px] "
                 style={{
                   borderBottom: '1.25px solid #dbdbf3',
                 }}
               >
-                <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
+                <Image
+                  src="/assets/images/Untitled.svg"
+                  width={30}
+                  height={30}
+                  alt="tick"
+                />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
                   <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Je krijgt binnen 30 sec een WhatsApp of mail
@@ -129,20 +162,30 @@ export const ThirdSection = () => {
                 </div>
               </div>
               <div
-                className="flex items-center gap-[15px] py-[30px] "
+                className="flex items-center gap-[15px] py-[15px] "
                 style={{
                   borderBottom: '1.25px solid #dbdbf3',
                 }}
               >
-                <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
+                <Image
+                  src="/assets/images/Untitled.svg"
+                  width={30}
+                  height={30}
+                  alt="tick"
+                />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
                   <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Je reageert als eerste op de woning
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-[15px] py-[30px] ">
-                <Image src="/assets/images/Untitled.svg" width={30} height={30} alt="tick" />
+              <div className="flex items-center gap-[15px] py-[15px] ">
+                <Image
+                  src="/assets/images/Untitled.svg"
+                  width={30}
+                  height={30}
+                  alt="tick"
+                />
                 <div className="max-w-[234px] w-full md:max-w-[252px] ">
                   <p className="poppins text-[12px] md:text-[14px] font-normal leading-[16.8px] text-[#1A1A1A] md:leading-[19.6px]">
                     Grote kans om de woning te krijgen

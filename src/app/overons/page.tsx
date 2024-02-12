@@ -16,7 +16,9 @@ const page = () => {
         <ThirdSection />
         <FrameEight />
         <FrameNine />
-        <Faq />
+        <div className="mt-[-15px] md:mt-0">
+          <Faq />
+        </div>
       </MainLayout>
     </div>
   );
