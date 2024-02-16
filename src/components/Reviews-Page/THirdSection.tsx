@@ -17,7 +17,7 @@ export const ThirdSection = () => {
             Activeer
           </Button>
         </div>
-        <div className="w-full flex justify-center text-center pt-[60px] pb-3">
+        <div className="w-full flex justify-center text-center pb-3">
           <Image
             src="/assets/images/Secure payments powered by Mollie -- Cards, iDeal, PayPal__2x 1.svg"
             height={82}
@@ -45,8 +45,8 @@ export const ThirdSection = () => {
         </div>
 
         <div className="grid grid-cols-12">
-          <div className="md:col-span-6 col-span-12 w-full p-4 mx-4 ">
-            <div className="max-w-full md:max-w-[440px] w-full mx-auto py-[40px]  bg-white md:rounded-[15px]">
+          <div className="md:col-span-6 col-span-12 w-full px-4">
+            <div className="max-w-full md:max-w-[440px] w-full mx-auto py-[20px]  bg-white md:rounded-[15px]">
               <p className="font-bold poppins text-[12px] leading-[16.8px] text-[#1A1A1A]">
                 Oude manier
               </p>
@@ -120,8 +120,8 @@ export const ThirdSection = () => {
             </div>
           </div>
 
-          <div className="md:col-span-6 col-span-12 w-full p-4 mx-4  ">
-            <div className="max-w-full md:max-w-[440px] w-full mx-auto py-[40px]  bg-white md:rounded-[15px]">
+          <div className="md:col-span-6 col-span-12 w-full px-4">
+            <div className="max-w-full md:max-w-[440px] w-full mx-auto py-[40px]  md:rounded-[15px]">
               <p className="font-bold poppins text-[12px] leading-[16.8px] text-[#1A1A1A]">
                 Huurscout manier
               </p>

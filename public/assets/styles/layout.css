@@ -149,7 +149,19 @@
   height: 100%;
   background-color: #ff8049;
   left: -5px;
+  
   right: 0;
   z-index: -1;
   transform: rotate(-2deg);
+}
+.back-text{
+  z-index: 2 !important;
+  position: relative;
+}
+.front-text{
+  z-index: 3 !important;
+  position: relative;
+}
+.side-border{
+  border-right: 1px solid #C6C5EC;
 }

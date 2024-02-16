@@ -1,10 +1,52 @@
 'use client';
-
 import { FaqAccordion } from '@/ui/FaqAccordion';
 import Image from 'next/image';
-import React from 'react';
-
+import React, { useState } from 'react';
+import leftArrow from '../../../public/assets/images/button.svg';
+import leftRight from '../../../public/assets/images/button (1).svg';
+import { useMediaQuery } from '@react-hook/media-query';
+const cards = [
+  {
+    heading: 'Vertel ons jouw woonwensen',
+    step: ' STAP 1/3',
+    desc: ' Plaats in één minuut jouw zoekopdracht en onze zoekbot begint direct met het vinden van huizen die passen bij jouw woonwensen',
+  },
+  {
+    heading: 'Vertel ons jouw woonwensen',
+    step: ' STAP 2/3',
+    desc: ' Plaats in één minuut jouw zoekopdracht en onze zoekbot begint direct met het vinden van huizen die passen bij jouw woonwensen',
+  },
+  {
+    heading: 'Vertel ons jouw woonwensen',
+    step: ' STAP 3/3',
+    desc: ' Plaats in één minuut jouw zoekopdracht en onze zoekbot begint direct met het vinden van huizen die passen bij jouw woonwensen',
+  },
+];
 export const FrameSeven = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const isLargeScreen = useMediaQuery('(min-width: 2400px)');
+  const cardsPerPage = isLargeScreen ? 3 : 1;
+
+  const indexOfLastCard = currentPage * cardsPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+  const currentCards = cards.slice(indexOfFirstCard, indexOfLastCard);
+
+  const totalPages = Math.ceil(cards.length / cardsPerPage);
+  const cp = currentPage;
+  const tp = totalPages;
+
+  const nextPage = () => {
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+  };
+
+  const prevPage = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  };
+
+  const percentageComplete = ((cp - 1) / (tp - 1)) * 100;
+  const barColor = `linear-gradient(90deg, #fd8047 ${percentageComplete}%, #ffe6db ${percentageComplete}%)`;
+
   return (
     <div className="  md:my-[60px] ">
       <div className="  min-h-[693px]   md:flex md:items-center  md:min-h-[571px] max-w-full bg-[#242C3C] sm:px-[31px] xl:p-0 xl:max-w-[1118px] w-full mx-auto ">
@@ -22,6 +64,30 @@ export const FrameSeven = () => {
           <div className="md:w-7/12 w-full p-4">
             <div className=" w-full flex md:gap-[10px] justify-center  md:justify-start">
               <div className="card max-w-full w-full md:max-w-[300px] min-h-[407px] rounded-[10px] bg-[#FBF4EA] p-[20px]">
+                {currentCards.map((item) => (
+                  <div key={item.id} className="flex flex-col gap-2">
+                    <h2 className="poppins font-bold text-[18px] leading-[19.8px] text-[#1A1A1A]">
+                      {item.heading}
+                    </h2>
+                    <div className="flex justify-center pt-[20px]">
+                      <Image
+                        src="/assets/images/Group 392.svg"
+                        height={182}
+                        width={235}
+                        alt=""
+                      />
+                    </div>
+                    <p className="poppins font-bold text-[10px] leading-[15px] tracking-[1.5px] text-[#1A1A1A]">
+                      {item.step}
+                    </p>
+                    <p className="poppins font-medium text-[14px] leading-[19.6px] text-[#1A1A1A]">
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* <div className="card max-w-full hidden md:flex w-full md:max-w-[300px] min-h-[407px] rounded-[10px] bg-[#FBF4EA] p-[20px]">
                 <div className="flex flex-col gap-2">
                   <h2 className="poppins font-bold text-[18px] leading-[19.8px] text-[#1A1A1A]">
                     Vertel ons jouw woonwensen
@@ -43,69 +109,26 @@ export const FrameSeven = () => {
                     woonwensen.
                   </p>
                 </div>
-              </div>
-              <div className="card max-w-full hidden md:flex w-full md:max-w-[300px] min-h-[407px] rounded-[10px] bg-[#FBF4EA] p-[20px]">
-                <div className="flex flex-col gap-2">
-                  <h2 className="poppins font-bold text-[18px] leading-[19.8px] text-[#1A1A1A]">
-                    Vertel ons jouw woonwensen
-                  </h2>
-                  <div className="flex justify-center pt-[20px]">
-                    <Image
-                      src="/assets/images/Group 392.svg"
-                      height={182}
-                      width={235}
-                      alt=""
-                    />
-                  </div>
-                  <p className="poppins font-bold text-[10px] leading-[15px] tracking-[1.5px] text-[#1A1A1A]">
-                    STAP 1/3
-                  </p>
-                  <p className="poppins font-medium text-[14px] leading-[19.6px] text-[#1A1A1A]">
-                    Plaats in één minuut jouw zoekopdracht en onze zoekbot
-                    begint direct met het vinden van huizen die passen bij jouw
-                    woonwensen.
-                  </p>
-                </div>
-              </div>
+              </div> */}
             </div>
-            <div className="w-full  md:flex justify-between hidden pt-[30px] items-center ">
-              <div className="flex gap-2 items-center">
-                <Image
-                  src="/assets/images/button.svg"
-                  height={40}
-                  width={40}
-                  alt="arrow-left"
-                />
-                <Image
-                  src="/assets/images/button (1).svg"
-                  height={40}
-                  width={40}
-                  alt="arrow-left"
-                />
-              </div>
-              <div className="w-[400px] bg-gray-200 rounded-full h-[4px] dark:bg-[#42485e]">
+            <div className="w-full md:w-[432px] flex justify-between  pt-[30px] items-center">
+              <div className="w-[180px] md:w-[350px] md:px-2 bg-gray-200 rounded-full h-[4px] dark:bg-[#ffe6db]">
                 <div
-                  className="bg-[#B8B6E7] h-[4px] rounded-full"
-                  style={{ width: '25%' }}
-                ></div>
-              </div>
-            </div>
-            <div className="w-full flex justify-between md:hidden pt-[30px] items-center ">
-              <div className="w-[101px] bg-gray-200 rounded-full h-[4px] dark:bg-[#42485e]">
-                <div
-                  className="bg-[#B8B6E7] h-[4px] rounded-full"
-                  style={{ width: '25%' }}
+                  className="bg-[#FF8049] h-[4px] rounded-full"
+                  style={{ background: barColor }}
                 ></div>
               </div>
               <div className="flex gap-2 items-center">
                 <Image
-                  src="/assets/images/button.svg"
+                  src={leftArrow}
+                  onClick={prevPage}
                   height={40}
                   width={40}
                   alt="arrow-left"
                 />
                 <Image
-                  src="/assets/images/button (1).svg"
+                  src={leftRight}
+                  onClick={nextPage}
                   height={40}
                   width={40}
                   alt="arrow-left"

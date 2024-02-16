@@ -103,7 +103,7 @@ const cards = [
 export const Reviews = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const isLargeScreen = useMediaQuery('(min-width: 425px)');
+  const isLargeScreen = useMediaQuery('(min-width: 767px)');
   const cardsPerPage = isLargeScreen ? 3 : 1;
 
   const indexOfLastCard = currentPage * cardsPerPage;

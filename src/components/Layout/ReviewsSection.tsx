@@ -1,7 +1,7 @@
 'use client';
 import { Pagination } from '@mantine/core';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 const data = [
   {
     id: 1,
@@ -46,14 +46,137 @@ const data = [
     author: 'ERIK VAN VEEN',
     desc: 'Geschreven op',
     source: 'Trustpilot',
+    bg: '#B8B6E7',
+  },
+  {
+    id: 6,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#FBF4EA',
+  },
+  {
+    id: 7,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#B8B6E7',
+  },
+  {
+    id: 8,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#FBF4EA',
+  },
+  {
+    id: 9,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#B8B6E7',
+  },
+  {
+    id: 10,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#FBF4EA',
+  },
+  {
+    id: 11,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#B8B6E7',
+  },
+  {
+    id: 12,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#B8B6E7',
+  },
+  {
+    id: 13,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#FBF4EA',
+  },
+  {
+    id: 14,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#B8B6E7',
+  },
+  {
+    id: 15,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#FF8049',
+  },
+  {
+    id: 16,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
+    bg: '#B8B6E7',
+  },
+  {
+    id: 17,
+    quote:
+      ' “Wow! Met Huurscout vond ik binnen 4 weken een leuke woning. Fantastisch!”',
+    author: 'ERIK VAN VEEN',
+    desc: 'Geschreven op',
+    source: 'Trustpilot',
     bg: '#FBF4EA',
   },
 ];
 
 export const ReviewsSection = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4; // Change this number based on how many items you want to display per page
+
+  // Calculate the index range of the items to display for the current page
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  // Slice the data array to get the items for the current page
+  const currentPageData = data.slice(startIndex, endIndex);
+
+  // Function to handle page change
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+  };
+
   return (
     <div
-      className=" min-h-[1836px]  md:mt-0 bg-[#FFFFFF]  md:flex md:items-center  md:min-h-[661px]  "
+      className=" min-h-[1000px]  md:mt-0 bg-[#FFFFFF]  md:flex md:items-center  md:min-h-[661px]  "
       style={{
         borderRadius: '10px 10px 0px 0px',
       }}
@@ -79,7 +202,7 @@ export const ReviewsSection = () => {
 
           <div className="col-span-12 md:col-span-7 p-4  ">
             <div className="flex gap-[20px] w-full flex-col md:flex-row scr overflow-x-auto">
-              {data.map((item, index) => (
+              {currentPageData.map((item, index) => (
                 <div
                   key={index}
                   className="card-1 md:w-400 min-h-[300px]  rounded-[10px] p-[20px] flex flex-col justify-between"
@@ -111,7 +234,13 @@ export const ReviewsSection = () => {
               ))}
             </div>
             <div className="pt-[20px]">
-              <Pagination total={10} color="green" radius="lg" />
+              <Pagination
+                total={Math.ceil(data.length / itemsPerPage)} // Calculate total number of pages based on data length and items per page
+                color="green"
+                radius="lg"
+                value={currentPage} // Pass current page state
+                onChange={handlePageChange} // Handle page change
+              />
             </div>
           </div>
         </div>

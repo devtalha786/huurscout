@@ -2,7 +2,7 @@
 
 import { Box } from '@mantine/core';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 const data = [
   {
@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 3,
-    value: 'min . 30m2',
+    value: 'min . 30m22',
   },
   {
     id: 4,
@@ -24,6 +24,27 @@ const data = [
 ];
 
 export const SecondComponent = () => {
+  const [isChecked1, setIsChecked1] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
+  const [isChecked3, setIsChecked3] = useState(false);
+
+  const handleCheckboxClick1 = () => {
+    setIsChecked1(true);
+    setIsChecked2(false);
+    setIsChecked3(false);
+  };
+
+  const handleCheckboxClick2 = () => {
+    setIsChecked1(false);
+    setIsChecked2(true);
+    setIsChecked3(false);
+  };
+
+  const handleCheckboxClick3 = () => {
+    setIsChecked1(false);
+    setIsChecked2(false);
+    setIsChecked3(true);
+  };
   return (
     <Box
       className="     bg-[#B8B6E7]"
@@ -66,7 +87,7 @@ export const SecondComponent = () => {
           </div>
 
           {/* Column 2 */}
-          <div className="col-span-12 md:col-span-6  p-4">
+          <div className="col-span-12 md:col-span-6 p-4">
             <div className="mx-4 md:mx-0">
               <div className="flex flex-col gap-3">
                 <div
@@ -77,15 +98,21 @@ export const SecondComponent = () => {
                   }}
                 >
                   <div
-                    className="w-[60px] bg-black flex items-center justify-center p-2"
+                    className={`w-[60px] flex items-center justify-center p-2 side-border px-5 ${
+                      isChecked1 ? 'bg-black' : ''
+                    }`}
                     style={{
                       borderRadius: '10px 0px 0px 10px',
                     }}
+                    onClick={handleCheckboxClick1}
                   >
                     <div
                       className="w-[16px] h-[16px] rounded-[50%]"
                       style={{
-                        border: '3px solid #FBF4EA',
+                        border: `3px solid ${
+                          isChecked1 ? '#FBF4EA' : '#B8B6E7'
+                        }`,
+                        backgroundColor: isChecked1 ? 'black' : 'transparent',
                       }}
                     ></div>
                   </div>
@@ -119,6 +146,7 @@ export const SecondComponent = () => {
                     </div>
                   </div>
                 </div>
+
                 <div
                   className="card max-w-[327px] w-full flex bg-[#FFFFFF] rounded-[10px]"
                   style={{
@@ -127,17 +155,21 @@ export const SecondComponent = () => {
                   }}
                 >
                   <div
-                    className="w-[60px] bg-white flex items-center justify-center p-2"
+                    className={`w-[60px] flex items-center justify-center p-2 side-border px-5 ${
+                      isChecked2 ? 'bg-black' : ''
+                    }`}
                     style={{
                       borderRadius: '10px 0px 0px 10px',
-                      borderRight: '1px solid #B8B6E7',
                     }}
+                    onClick={handleCheckboxClick2}
                   >
                     <div
                       className="w-[16px] h-[16px] rounded-[50%]"
                       style={{
-                        border: '1px solid #B8B6E7',
-                        boxShadow: '0px 3px 1px 0px #00000014 inset',
+                        border: `3px solid ${
+                          isChecked2 ? '#FBF4EA' : '#B8B6E7'
+                        }`,
+                        backgroundColor: isChecked2 ? 'black' : 'transparent',
                       }}
                     ></div>
                   </div>
@@ -176,6 +208,7 @@ export const SecondComponent = () => {
                     </div>
                   </div>
                 </div>
+
                 <div
                   className="card max-w-[327px] w-full flex bg-[#FFFFFF] rounded-[10px]"
                   style={{
@@ -184,20 +217,25 @@ export const SecondComponent = () => {
                   }}
                 >
                   <div
-                    className="w-[60px] bg-white flex items-center justify-center p-2"
+                    className={`w-[60px] flex items-center justify-center p-2 side-border px-5 ${
+                      isChecked3 ? 'bg-black' : ''
+                    }`}
                     style={{
                       borderRadius: '10px 0px 0px 10px',
-                      borderRight: '1px solid #B8B6E7',
                     }}
+                    onClick={handleCheckboxClick3}
                   >
                     <div
                       className="w-[16px] h-[16px] rounded-[50%]"
                       style={{
-                        border: '1px solid #B8B6E7',
-                        boxShadow: '0px 3px 1px 0px #00000014 inset',
+                        border: `3px solid ${
+                          isChecked3 ? '#FBF4EA' : '#B8B6E7'
+                        }`,
+                        backgroundColor: isChecked3 ? 'black' : 'transparent',
                       }}
                     ></div>
                   </div>
+
                   <div className="flex flex-col w-full">
                     <div className="p-4">
                       <h1 className="poppins font-bold text-[18px] leading-[25.2px] text-[#242C3C]">
@@ -207,6 +245,7 @@ export const SecondComponent = () => {
                         €29 /mnd.
                       </p>
                     </div>
+
                     <div
                       className="p-4 bg-[#f8f8fd] w-full"
                       style={{

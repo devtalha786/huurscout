@@ -14,9 +14,10 @@ export const FrameNine = () => {
         <div className="grid grid-cols-12 flex-wrap py-[30px]">
           <div className="col-span-12 md:col-span-5 p-4">
             <div className="md:max-w-[553px] max-w-[326px] mx-auto md:mx-0 w-full  md:pb-0 ">
-              <p className="semibold-font md:max-w-[350px] max-w-full font-semibold text-[46px]  text-[#FBF4EA] leading-[44.16px] ">
-                Wij zijn pas tevreden als{' '}
-                <span className="bg-txt3 text-[#FBF4EA]">jij dat </span> bent
+              <p className="semibold-font md:max-w-[350px] max-w-full font-semibold text-[46px]  text-[#FBF4EA] leading-[44.16px]">
+                Wij zijn pas tevrede<span className="back-text">n</span> als  
+                <span className="bg-txt3 ml-2 text-[#FBF4EA]">jij dat </span>
+                <span className="back-text">bent</span>
               </p>
 
               <p className="poppins md:max-w-[350px] max-w-[270px] font-medium text-[14px] leading-[19.6px] text-[#FBF4EA] py-[30px]">
