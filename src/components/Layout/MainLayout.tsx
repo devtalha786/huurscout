@@ -15,7 +15,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <div>
       <Header />
-      {pathname == '/overons' ? '' : <HeaderBar />}
+      <div className="pt-[50px] sm:pt-[58px]">{pathname == '/overons' ? '' : <HeaderBar />}</div>
       {children}
       <Footer />
       <HeaderBar />
