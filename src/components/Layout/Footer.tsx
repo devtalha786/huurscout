@@ -90,21 +90,21 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
-        
+
           <div className="col-span-12 md:col-span-3 p-4">
-            <div className="md:max-w-[553px] max-w-[326px] mx-auto md:mx-0 w-full md:pb-0">
-              <div className="py-[30px]">
+            <div className="md:max-w-[553px] max-w-[274px] mx-auto md:mx-0 w-full md:pb-0 relative">
+              <div className="py-[30px] relative">
                 <Image
                   src="/assets/images/Secure payments powered by Mollie -- Cards, iDeal, PayPal__2x 2.svg"
                   height={68}
                   width={271}
                   alt=""
+                  style={{ width: "100%", height: "auto" }}
+                  className="inset-0 border border-[#a09d9d] border-solid rounded-lg"
                 />
+                <div className="border border-solid border-white mt-4"></div>
               </div>
-              <div
-                className="md:hidden"
-                style={{ border: '1px solid #FBF4EA' }}
-              ></div>
+              {/* <div className="md:hidden border border-solid border-white"></div> */}
             </div>
           </div>
 
@@ -131,9 +131,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full text-center py-[30px] md:max-w-[553px] max-w-[326px] mx-auto flex justify-center">
+        <div className="w-full text-center pb-[30px] md:max-w-[553px] max-w-[326px] mx-auto flex justify-center">
           <div>
-            <div className="img mt-4 flex justify-center">
+            <div className="img flex justify-center">
               <Image
                 src="/assets/images/808C02E0-8082-4A85-B401-480BFD71147E 2.svg"
                 width={214}
@@ -142,7 +142,7 @@ export const Footer = () => {
                 className="cursor-pointer object-cover"
               />
             </div>
-            <div className="hidden md:flex pt-[20px] gap-[20px]">
+            <div className="flex pt-[20px] gap-[20px]">
               <Link href="/privacy-policy">
                 <p className="poppins font-normal underline text-[12px] text-[#B8B6E7] leading-[21.6px] ">
                   Privacy policy

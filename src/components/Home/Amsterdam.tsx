@@ -26,22 +26,26 @@ export const Amsterdam = () => {
                   <div className="max-w-full md:max-w-[440px] w-full text-center md:text-start">
                     <h1 className="text-[26px] relative md:text-[34px] text-[#FBF4EA] leading-[25px] md:leading-[34px] font-semibold semibold-font">
                       Huurscout vond <span className="text-[#FF8049]">179</span>{' '}
-                      huurwoningen in Amsterdam
-                      <Image
-                        src="/assets/images/Polygon 1.svg"
-                        className="inline-block ml-2" // Add margin or adjust as needed
-                        height={14}
-                        width={14}
-                        alt="Polygon 1"
-                      />
+                      huurwoningen in{' '}
+                      <span className="relative mb-1">
+                        Amsterdam
+                        <span className="absolute top-9 bottom-0 left-0 w-full  h-1 bg-[#FBF4EA]"></span>
+                        <Image
+                          src="/assets/images/Polygon 1.svg"
+                          className="inline-block ml-3 mt-3" // Add margin or adjust as needed
+                          height={14}
+                          width={14}
+                          alt="Polygon 1"
+                        />
+                      </span>
                     </h1>
 
-                    <div
+                    {/* <div
                       className="max-w-[209px] ml-auto md:ml-0 w-full md:max-w-[327px] pt-2"
                       style={{
                         borderBottom: '2px solid #FBF4EA',
                       }}
-                    ></div>
+                    ></div> */}
                   </div>
                 </div>
 
