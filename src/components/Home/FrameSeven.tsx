@@ -1,5 +1,4 @@
 'use client';
-import { FaqAccordion } from '@/ui/FaqAccordion';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import leftArrow from '../../../public/assets/images/button.svg';
@@ -7,16 +6,19 @@ import leftRight from '../../../public/assets/images/button (1).svg';
 import { useMediaQuery } from '@react-hook/media-query';
 const cards = [
   {
+    id: 1,
     heading: 'Vertel ons jouw woonwensen',
     step: ' STAP 1/3',
     desc: ' Plaats in één minuut jouw zoekopdracht en onze zoekbot begint direct met het vinden van huizen die passen bij jouw woonwensen',
   },
   {
+    id: 2,
     heading: 'Vertel ons jouw woonwensen',
     step: ' STAP 2/3',
     desc: ' Plaats in één minuut jouw zoekopdracht en onze zoekbot begint direct met het vinden van huizen die passen bij jouw woonwensen',
   },
   {
+    id: 3,
     heading: 'Vertel ons jouw woonwensen',
     step: ' STAP 3/3',
     desc: ' Plaats in één minuut jouw zoekopdracht en onze zoekbot begint direct met het vinden van huizen die passen bij jouw woonwensen',

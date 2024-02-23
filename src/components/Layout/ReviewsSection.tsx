@@ -170,7 +170,7 @@ export const ReviewsSection = () => {
   const currentPageData = data.slice(startIndex, endIndex);
 
   // Function to handle page change
-  const handlePageChange = (newPage) => {
+  const handlePageChange = (newPage: React.SetStateAction<number>) => {
     setCurrentPage(newPage);
   };
 

@@ -1,5 +1,3 @@
-import { containerMaxWidth2 } from '@/theme/theme';
-import { Button, Container } from '@mantine/core';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -99,7 +97,7 @@ export const Footer = () => {
                   height={68}
                   width={271}
                   alt=""
-                  style={{ width: "100%", height: "auto" }}
+                  style={{ width: '100%', height: 'auto' }}
                   className="inset-0 border border-[#a09d9d] border-solid rounded-lg"
                 />
                 <div className="border border-solid border-white mt-4"></div>
